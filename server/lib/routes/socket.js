@@ -9,7 +9,8 @@ var camFps = 2; //2
 var camInterval = 4000;
 
 // detection properties
-var tolerance = 35 //0-100
+var game = "RftG";
+var tolerance = 35; //0-100
 
 // initialize camera
 var camera = new cv.VideoCapture(0);
@@ -17,7 +18,7 @@ camera.setWidth(camWidth);
 camera.setHeight(camHeight);
 
 // get list of files
-var directory = '../client/images/';
+var directory = '../client/' + game;
 var images = [];
 var curImage = "";
 images = fs.readdirSync(directory);
