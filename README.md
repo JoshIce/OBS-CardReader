@@ -24,7 +24,8 @@ This helps tabletop streaming setups that lack a high-res camera to show text on
 * Navigate to server directory in project
 * Type 'npm install --global --production windows-build-tools'
 * Type 'npm install'
-* Add images to the [project root]\client\images folder
+* Add images to the [project root]\client\games\[game name] folder
+* In [project root]\server\lib\routes\socket.js, change the game variable to the name of the game folder you are using.
 
 ## Setting up the card reader
 

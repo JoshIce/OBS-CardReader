@@ -9,7 +9,7 @@ var camFps = 2; //2
 var camInterval = 4000;
 
 // detection properties
-var game = "RftG";
+var game = "Arkon";
 var tolerance = 35; //0-100
 
 // initialize camera
@@ -18,7 +18,7 @@ camera.setWidth(camWidth);
 camera.setHeight(camHeight);
 
 // get list of files
-var directory = '../client/' + game;
+var directory = '../client/games/' + game;
 var images = [];
 var curImage = "";
 images = fs.readdirSync(directory);
