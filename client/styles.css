@@ -1,0 +1,17 @@
+body {
+  background-color: #00FF00;
+}
+
+.container {
+  padding-top: 50px;
+}
+
+.center {
+  text-align: center;
+}
+
+#canvas-video {
+  width: 640px;
+  height: 480px;
+  border: 1px solid #ccc;
+}
