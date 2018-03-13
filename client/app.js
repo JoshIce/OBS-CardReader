@@ -22,5 +22,5 @@ var socket = io.connect('http://localhost');
 // });
 
 socket.on('image', function(data){
-  document.getElementById("card").src="images/" + data.image;
+  document.getElementById("card").src=data.image;
 });
