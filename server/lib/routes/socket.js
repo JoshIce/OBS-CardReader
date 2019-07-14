@@ -52,14 +52,14 @@ module.exports = function (socket) {
         var curCard = cards.deq();
         if (curCard != curImagePQ){
           console.log(curCard.image + " is the most similar at " + curCard.similarity + "%");
-          socket.emit('image', { image: curCard.image});
+          socket.emit('image', { image: curCard.image.replace('../client','')});
           curImagePQ = curCard;
         };
         cards.forEach(function (){
           cards.deq();
         })
       };
-      // socket.emit('frame', { buffer: im.toBuffer() });
+      socket.emit('frame', { buffer: im.toBuffer() });
     });
   }, config.camInterval);
 };
